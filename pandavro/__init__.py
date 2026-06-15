@@ -72,6 +72,8 @@ def __type_infer(t):
         return ['null', avro_type]
     if hasattr(t, 'type'):
         return __type_infer(t.type)
+    if t is str:
+        return ['null', 'string']
 
     raise TypeError('Invalid type: {}'.format(t))
 

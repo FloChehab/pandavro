@@ -19,7 +19,7 @@ setup(
     install_requires=[
         # fixed versions.
         'fastavro>=1.5.1,<2.0.0',
-        'pandas>=2.0,<3.0.0',
+        'pandas>=2.0,<4.0.0',
         'numpy>=2.0,<3.0.0',
     ],
     extras_require={
